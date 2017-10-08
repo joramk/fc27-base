@@ -9,7 +9,7 @@ LABEL   name="Fedora 26 base image" \
         maintainer="joramk" \
 	issues="https://github.com/joramk/fc26-haproxy/issues"
 
-RUN {   yum update -y; \
+RUN {   yum update -y; yum install yum-cron -y; \
         yum clean all && rm -rf /var/cache/yum; \
         sed -i 's/#ForwardToConsole=no/ForwardToConsole=yes/g' /etc/systemd/journald.conf; \
 }
