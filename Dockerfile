@@ -1,11 +1,11 @@
-FROM    fedora:26
+FROM    fedora:27
 MAINTAINER joramk@gmail.com
 ENV     container docker
 
-LABEL   name="Fedora 26 base image" \
+LABEL   name="Fedora 27 base image" \
         vendor="https://github.com/joramk/fc26-haproxy" \
         license="none" \
-        build-date="20171008" \
+        build-date="20180304" \
         maintainer="joramk" \
 	issues="https://github.com/joramk/fc26-haproxy/issues"
 
