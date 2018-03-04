@@ -3,11 +3,11 @@ MAINTAINER joramk@gmail.com
 ENV     container docker
 
 LABEL   name="Fedora 27 base image" \
-        vendor="https://github.com/joramk/fc26-haproxy" \
+        vendor="https://github.com/joramk/fc27-base" \
         license="none" \
         build-date="20180304" \
         maintainer="joramk" \
-	issues="https://github.com/joramk/fc26-haproxy/issues"
+	issues="https://github.com/joramk/fc27-base/issues"
 
 RUN {   yum update -y; yum install yum-cron -y; \
         yum clean all && rm -rf /var/cache/yum; \
